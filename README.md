@@ -1,3 +1,35 @@
+
+This repo is from Avator-Net.
+I create `batch_processing.py` to process a batch of images. 
+
+For more info about Avator-Nat, please refer to the original repo.
+
+
+Usage
+--
+
+
+#### Generate the stylized images with multiple style (multiple content, multiple style)
+
+1. Create a folder with following structure:
+    ```
+    -- FOLDER_PATH
+        -- content
+        -- style
+        -- output
+    ```
+Put your content images in `FOLDER_PATH/content` and style images in `FOLDER_PATH/style`. The converted images will be saved in `FOLDER_PATH/output`.
+
+Run:
+```
+python batch_processing.py --img_root FOLDER_PATH
+```
+
+
+
+# Other info from original repo
+
+
 Avatar-Net: Multi-scale Zero-shot Style Transfer by Feature Decoration
 ---
 
@@ -23,26 +55,6 @@ Download
 * [MSCOCO train2014](http://cocodataset.org/#download) is needed to train the network.
 
 
-Usage
---
-
-
-#### Generate the stylized images with multiple style (multiple content, multiple style)
-
-1. Create a folder with following structure:
-    ```
-    -- FOLDER_PATH
-        -- content
-        -- style
-        -- output
-    ```
-Put your content images in `FOLDER_PATH/content` and style images in `FOLDER_PATH/style`. The converted images will be saved in `FOLDER_PATH/output`.
-
-Run:
-```
-python batch_processing.py --img_root FOLDER_PATH
-```
-
 
 Train a model by yourself
 --
@@ -62,12 +74,6 @@ Train a model by yourself
 * `--interpolatoin-weights`: Weights for multiple style interpolation
 * `--patch-size`: Patch size of style decorator (default: 3)
 * `--patch-stride`: Patch stride of style decorator (default: 1)
-
-
-
-
-
-
 
 
 
